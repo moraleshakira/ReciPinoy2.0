@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food park</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href=" css/st.css">
+  
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo">ReciPinoy</a>
+    <div id="menu" class="fas fa fa-bars"></div>
+
+    <div class="navbar">
+      <a href="index.html">HOME</a>
+      <a href="#footer">ABOUT</a>
+      <a href="#LoginToContinue">CONTACT</a>
+      
+    </div>
+
+  </header>
+
+    <!---------------------REGISTRATION-------FORM-------------------------------------->
+    <div class="container">
+        <h1 class="form-title">Log In</h1>
+        <form action="home.html">
+            <div class="main-user-info">
+
+                <div class="user-input-box">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Email" required />
+                </div>
+
+                <div class="user-input-box">
+                    <label for="password">Password </label>
+                    <input type="password" id="password" name="password" placeholder="Enter Password" required />
+                </div>
+            </div>
+            
+            <div class="form-submit-btn">
+                <input type="submit" value="Register">
+            </div>
+            <P>Don't have an account?<a href="signup.html"> Register Now!</a></P>
+        </form>
+    </div>
+    <!---------------------REGISTRATION-------FORM-------------------------------------->
+
+
+    <!---------------------ABOUT AREA-------------------------------------------------->
+    <section class="aboutarea">
+        <h3>Reci<span>Pinoy</span></h3>
+        <p>Brings you the intense local and native flavors just within your kitchen!</p>
+        <div class="abt-pic">
+            <img src="img/ab.gif">
+        </div>
+
+
+    </section>
+
+    <!--------------------ABOUT AREAO---------------------------------------------------->
+
+
+    <!--------------------------------FOOTER-------------------------------------------->
+    <footer class="footer-dis" id="footer">
+
+        <div class="footer-left">
+            <h3>Reci<span>Pinoy</span></h3>
+
+            <p class="footer-links">
+                <a href="index.html">Home</a>
+                |
+                <a href="#footer">About</a>
+                |
+                <a href="contact.html">Contact</a>
+                |
+                <a href="#">Blog</a>
+            </p>
+            <p class="footer-copy">Copyright © 2023 <strong>ReciPinoy</strong> All rights reserved</p>
+
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>USTP-CDO CAMPUS</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+63 **5 650 6***</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:morales.preciousshakirag@gmail.com">morales.preciousshakirag@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-about">
+                <span>About Us</span>
+                <strong>ReciPinoy</strong> Explore our collection of Filipino favorites that will 
+                certainly make everyone homesick for Philippines home-cooked dishes.
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+
+            </div>
+        </div>
+    </footer>
+    <!--------------------------------FOOTER-------------------------------------------->
+
+    <script src="js/login.js"></script>
+    <script>
+        let menu = document.querySelector('#menu');
+        let navbar = document.querySelector('.navbar');
+        
+        
+        menu.onclick = () =>{
+        
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('active');
+        }
+        
+        window.onscroll = () =>{
+        
+            menu.classList.remove('fa-times');
+            navbar.classList.remove('active');
+        
+        }
+
+
+    </script>
+</body>
+</html>

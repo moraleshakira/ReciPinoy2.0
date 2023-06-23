@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food park</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href=" css/st.css">
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo"><i class="fa-solid fa-mortar-pestle"></i>ReciPinoy</a>
+    <div id="menu" class="fas fa fa-bars"></div>
+
+    <div class="navbar">
+      <a href="home.html">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#contact">CONTACT</a>
+      <a href="index.html" class="w3-bar-item w3-button w3-right w3-hide-small" onclick="logout()">
+        <i class="fa fa-sign-out" id="logout-btn"></i></a>
+    </div>
+
+  </header>
+
+    <!---------------------REGISTRATION-------FORM-------------------------------------->
+    <div class="container">
+        <h1 class="form-title">Have something you’d like to let us know?</h1>
+        <p> Send Your Request! Whether you have a comment on a recipe or an idea to share, we would love to hear from you
+            Feel free to get in touch with us.</p>
+        <form action="home.html">
+            <div class="main-user-info">
+                <div class="user-input-box">
+                    <label for="Name">Name</label>
+                    <input type="text" id="Name" name="Name" placeholder="Enter  Name" required />
+                </div>
+                <div class="user-input-box">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Email" required />
+                </div>
+                <div class="user-input-box">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write message.." style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="form-submit-btn">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <!---------------------REGISTRATION-------FORM-------------------------------------->
+
+
+    <!---------------------ABOUT AREA-------------------------------------------------->
+    <section class="aboutarea">
+        <h3>Reci<span>Pinoy</span></h3>
+        <p>Brings you the intense local and native flavors just within your kitchen!</p>
+        <div class="abt-pic">
+            <img src="img/ab.gif">
+        </div>
+
+
+    </section>
+
+    <!--------------------ABOUT AREAO---------------------------------------------------->
+
+
+    <!--------------------------------FOOTER-------------------------------------------->
+    <footer class="footer-dis" id="footer">
+
+        <div class="footer-left">
+            <h3>Reci<span>Pinoy</span></h3>
+
+            <p class="footer-links">
+                <a href="#">Home</a>
+                |
+                <a href="#footer">About</a>
+                |
+                <a href="contact.html">Contact</a>
+                |
+                <a href="blog-page.html">Blog</a>
+            </p>
+            <p class="footer-copy">Copyright © 2023 <strong>ReciPinoy</strong> All rights reserved</p>
+
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>USTP-CDO CAMPUS</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+63 **5 650 6***</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:morales.preciousshakirag@gmail.com">morales.preciousshakirag@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-about">
+                <span>About Us</span>
+                <strong>ReciPinoy</strong> Explore our collection of Filipino favorites that will 
+                certainly make everyone homesick for Philippines home-cooked dishes.
+            </p>
+            <div class="footer-icons">
+                <a href="https://web.facebook.com/login"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/login/"><i class="fa fa-instagram"></i></a>
+                <a href="https://twitter.com/login"><i class="fa fa-twitter"></i></a>
+
+            </div>
+        </div>
+    </footer>
+    <!--------------------------------FOOTER-------------------------------------------->
+
+
+
+
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.querySelector("header").style.top = "0";
+        } else {
+            document.querySelector("header").style.top = "-10%";
+        }
+        prevScrollpos = currentScrollPos;
+        }
+    </script>
+    <script src="js/code.js"></script>
+
+</body>
+
+</html>
